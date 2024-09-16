@@ -21,6 +21,7 @@
         .section-title {
             border-bottom: 2px solid #6c757d;
             margin-bottom: 20px;
+            padding-bottom: 10px;
         }
         .footer {
             text-align: center;
@@ -32,12 +33,32 @@
         .social-icons a {
             margin-right: 10px;
         }
+        .resume-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .resume-section ul li::before {
+            content: "\2022"; /* Bullet point */
+            color: #6c757d;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        .project-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header class="text-center">
+        <!-- Header Section -->
+        <header class="text-center mb-5">
             <h1>Amr Khairy</h1>
             <p>Cairo, Egypt | +201127165868 | <a href="mailto:Amr.khairy20@gmail.com">Amr.khairy20@gmail.com</a></p>
             <div class="social-icons">
@@ -47,7 +68,8 @@
             </div>
         </header>
 
-        <section class="mt-5">
+        <!-- Work Experience Section -->
+        <section class="resume-section">
             <h2 class="section-title">Work Experience</h2>
             <h3>Signature Technology, Big Data & BI Analyst</h3>
             <p><strong>Feb 2024 – Present</strong> | Remotely</p>
@@ -65,35 +87,66 @@
             </ul>
         </section>
 
-        <section class="mt-5">
+        <!-- Education Section -->
+        <section class="resume-section mt-5">
             <h2 class="section-title">Education</h2>
             <p><strong>Information Technology Institute (ITI)</strong><br>9-Month Professional Diploma, Data Science Track<br><em>Oct 2022 – Jul 2023 | Giza, Egypt</em></p>
+            <p><strong>Cairo University, Faculty of Law</strong><br>Graduated with a degree in Law<br><em>Oct 2015 – Jun 2019 | Giza, Egypt</em></p>
         </section>
 
-        <section class="mt-5">
+        <!-- Technical Skills Section -->
+        <section class="resume-section mt-5">
             <h2 class="section-title">Technical Skills</h2>
             <ul>
-                <li>Data Analysis, Machine Learning, Deep Learning (Python, R, TensorFlow, PyTorch)</li>
-                <li>Business Statistics, EDA (Excel, SQL)</li>
-                <li>Cloud Platforms (Azure, AWS)</li>
-                <li>Visualization Tools (Tableau, Power BI)</li>
+                <li>Programming Languages: Python, R, Java, PHP</li>
+                <li>Machine Learning & Deep Learning: TensorFlow, PyTorch, Scikit-learn</li>
+                <li>Cloud Platforms: AWS, Azure</li>
+                <li>Data Analysis & Visualization: Power BI, Tableau, SQL</li>
+                <li>Big Data Tools: Hadoop, Spark</li>
+                <li>Time Series: Prophet</li>
+                <li>Project Management & Financial Accounting</li>
             </ul>
         </section>
 
-        <section class="mt-5">
+        <!-- Projects Section -->
+        <section class="resume-section mt-5">
             <h2 class="section-title">Projects</h2>
             <ul>
-                <li><a href="https://github.com/Amr-mohamed10/Symantic_Search">Semantic Search using BERT for Keyword Extraction</a></li>
-                <li><a href="https://github.com/Amr-mohamed10/Face_Matching">Face Recognition System</a></li>
-                <li><a href="https://github.com/Amr-mohamed10/Price_Prediction">Price Prediction Model</a></li>
-                <li><a href="https://public.tableau.com/views/CovidAfricia2022/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link">Covid-19 Visualization on Tableau</a></li>
+                <li><a class="project-link" href="https://github.com/Amr-mohamed10/Symantic_Search">Semantic Search using BERT for Keyword Extraction</a></li>
+                <li><a class="project-link" href="https://github.com/Amr-mohamed10/Face_Matching">Face Recognition System</a></li>
+                <li><a class="project-link" href="https://github.com/Amr-mohamed10/Price_Prediction">Price Prediction Model</a></li>
+                <li><a class="project-link" href="https://public.tableau.com/views/CovidAfricia2022/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link">Covid-19 Visualization on Tableau</a></li>
             </ul>
         </section>
+
+        <!-- Extracurricular Activities Section -->
+        <section class="resume-section mt-5">
+            <h2 class="section-title">Extracurricular Activities</h2>
+            <h3>Instructor, Egyptian Red Crescent</h3>
+            <p><strong>Mar 2019 – Sep 2019</strong> | Cairo, Egypt</p>
+            <ul>
+                <li>Led anti-bullying programs for over 100 refugee children, endorsed by the United Nations.</li>
+                <li>Enhanced student engagement by 50% through creative teaching methods.</li>
+            </ul>
+
+            <h3>IT Member, Egyptian Red Crescent</h3>
+            <p><strong>May 2018 – Feb 2019</strong> | Cairo, Egypt</p>
+            <ul>
+                <li>Managed data collection and analysis for 500+ refugee profiles.</li>
+                <li>Increased database accuracy by 30% through improved communication channels with refugee organizations.</li>
+            </ul>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 Amr Khairy</p>
+        </footer>
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Amr Khairy</p>
-    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
