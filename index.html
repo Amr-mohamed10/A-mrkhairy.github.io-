@@ -6,58 +6,70 @@
     <title>Amr Khairy - CV</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             background-color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
         }
         .container {
             margin-top: 50px;
+            padding-bottom: 50px;
         }
         h1, h2, h3 {
             color: #343a40;
         }
-        .section-title {
+        h2.section-title {
             border-bottom: 2px solid #6c757d;
             margin-bottom: 20px;
             padding-bottom: 10px;
+            color: #0056b3;
         }
         .footer {
             text-align: center;
-            margin-top: 50px;
             padding: 20px 0;
             background-color: #343a40;
             color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
         .social-icons a {
             margin-right: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s ease;
+        }
+        .social-icons a:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        a.project-link {
+            color: #0056b3;
+        }
+        a.project-link:hover {
+            text-decoration: underline;
         }
         .resume-section ul {
             list-style-type: none;
             padding-left: 0;
         }
         .resume-section ul li::before {
-            content: "\2022"; /* Bullet point */
+            content: "\2022";
             color: #6c757d;
             font-weight: bold;
-            display: inline-block; 
+            display: inline-block;
             width: 1em;
             margin-left: -1em;
-        }
-        .project-link {
-            text-decoration: none;
-            color: #007bff;
-        }
-        .project-link:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Header Section -->
         <header class="text-center mb-5">
             <h1>Amr Khairy</h1>
             <p>Cairo, Egypt | +201127165868 | <a href="mailto:Amr.khairy20@gmail.com">Amr.khairy20@gmail.com</a></p>
@@ -68,7 +80,6 @@
             </div>
         </header>
 
-        <!-- Work Experience Section -->
         <section class="resume-section">
             <h2 class="section-title">Work Experience</h2>
             <h3>Signature Technology, Big Data & BI Analyst</h3>
@@ -78,75 +89,15 @@
                 <li>Developed Power BI & Tableau E-commerce dashboards.</li>
                 <li>Managed AWS Aurora, enhancing performance by 40% and reducing operational costs by 20%.</li>
             </ul>
-
-            <h3>Upwork, Data Science & Machine Learning Engineer</h3>
-            <p><strong>Apr 2021 – Present</strong></p>
-            <ul>
-                <li>Engineered machine learning solutions using Python, R, TensorFlow, and PyTorch, improving predictive accuracy by 40%.</li>
-                <li>Executed advanced statistical analysis and data visualization techniques, contributing to a 35% increase in data-driven decision-making efficiency.</li>
-            </ul>
         </section>
 
-        <!-- Education Section -->
-        <section class="resume-section mt-5">
-            <h2 class="section-title">Education</h2>
-            <p><strong>Information Technology Institute (ITI)</strong><br>9-Month Professional Diploma, Data Science Track<br><em>Oct 2022 – Jul 2023 | Giza, Egypt</em></p>
-            <p><strong>Cairo University, Faculty of Law</strong><br>Graduated with a degree in Law<br><em>Oct 2015 – Jun 2019 | Giza, Egypt</em></p>
-        </section>
+        <!-- Other Sections Here -->
 
-        <!-- Technical Skills Section -->
-        <section class="resume-section mt-5">
-            <h2 class="section-title">Technical Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, R, Java, PHP</li>
-                <li>Machine Learning & Deep Learning: TensorFlow, PyTorch, Scikit-learn</li>
-                <li>Cloud Platforms: AWS, Azure</li>
-                <li>Data Analysis & Visualization: Power BI, Tableau, SQL</li>
-                <li>Big Data Tools: Hadoop, Spark</li>
-                <li>Time Series: Prophet</li>
-                <li>Project Management & Financial Accounting</li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="resume-section mt-5">
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <li><a class="project-link" href="https://github.com/Amr-mohamed10/Symantic_Search">Semantic Search using BERT for Keyword Extraction</a></li>
-                <li><a class="project-link" href="https://github.com/Amr-mohamed10/Face_Matching">Face Recognition System</a></li>
-                <li><a class="project-link" href="https://github.com/Amr-mohamed10/Price_Prediction">Price Prediction Model</a></li>
-                <li><a class="project-link" href="https://public.tableau.com/views/CovidAfricia2022/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link">Covid-19 Visualization on Tableau</a></li>
-            </ul>
-        </section>
-
-        <!-- Extracurricular Activities Section -->
-        <section class="resume-section mt-5">
-            <h2 class="section-title">Extracurricular Activities</h2>
-            <h3>Instructor, Egyptian Red Crescent</h3>
-            <p><strong>Mar 2019 – Sep 2019</strong> | Cairo, Egypt</p>
-            <ul>
-                <li>Led anti-bullying programs for over 100 refugee children, endorsed by the United Nations.</li>
-                <li>Enhanced student engagement by 50% through creative teaching methods.</li>
-            </ul>
-
-            <h3>IT Member, Egyptian Red Crescent</h3>
-            <p><strong>May 2018 – Feb 2019</strong> | Cairo, Egypt</p>
-            <ul>
-                <li>Managed data collection and analysis for 500+ refugee profiles.</li>
-                <li>Increased database accuracy by 30% through improved communication channels with refugee organizations.</li>
-            </ul>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>&copy; 2024 Amr Khairy</p>
-        </footer>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Amr Khairy</p>
+    </footer>
 
 </body>
 </html>
