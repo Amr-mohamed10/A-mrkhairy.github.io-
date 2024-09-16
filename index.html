@@ -11,13 +11,20 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body {
+            display: flex;
+            flex-direction: column;
             background-color: #f8f9fa;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             line-height: 1.6;
         }
         .container {
+            flex: 1; /* Pushes the footer to the bottom */
             margin-top: 50px;
             padding-bottom: 50px;
         }
@@ -35,9 +42,6 @@
             padding: 20px 0;
             background-color: #343a40;
             color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         .social-icons a {
             margin-right: 10px;
