@@ -4,71 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amr Khairy - CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #f8f9fa;
         }
-        .section {
-            margin-bottom: 20px;
+        .container {
+            margin-top: 50px;
         }
         h1, h2, h3 {
-            color: #333;
+            color: #343a40;
+        }
+        .section-title {
+            border-bottom: 2px solid #6c757d;
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Amr Khairy</h1>
-        <p>Cairo, Egypt | +201127165868 | <a href="mailto:Amr.khairy20@gmail.com">Amr.khairy20@gmail.com</a></p>
-        <p><a href="https://github.com/Amr-mohamed10">GitHub</a> | <a href="https://www.kaggle.com/amrkhairy">Kaggle</a> | <a href="https://public.tableau.com/app/profile/amr.mohamed7950">Tableau</a></p>
-    </header>
-    
-    <section class="section">
-        <h2>Work Experience</h2>
-        <h3>Signature Technology, Big Data & BI Analyst</h3>
-        <p><strong>Feb 2024 – Present</strong> | Remotely</p>
-        <ul>
-            <li>Utilized MYSQL for data analysis, reducing inventory costs by 15% and increasing customer retention by 10%.</li>
-            <li>Developed Power BI & Tableau E-commerce dashboards.</li>
-            <li>Managed AWS Aurora, enhancing performance by 40% and reducing operational costs by 20%.</li>
-        </ul>
 
-        <h3>Upwork, Data Science & Machine Learning Engineer</h3>
-        <p><strong>Apr 2021 – Present</strong></p>
-        <ul>
-            <li>Engineered machine learning solutions using Python, R, TensorFlow, and PyTorch, improving predictive accuracy by 40%.</li>
-            <li>Executed advanced statistical analysis and data visualization techniques, contributing to a 35% increase in data-driven decision-making efficiency.</li>
-        </ul>
-    </section>
+    <div class="container">
+        <header class="text-center">
+            <h1>Amr Khairy</h1>
+            <p>Cairo, Egypt | +201127165868 | <a href="mailto:Amr.khairy20@gmail.com">Amr.khairy20@gmail.com</a></p>
+            <p><a href="https://github.com/Amr-mohamed10" class="btn btn-dark">GitHub</a> 
+               <a href="https://www.kaggle.com/amrkhairy" class="btn btn-info">Kaggle</a> 
+               <a href="https://public.tableau.com/app/profile/amr.mohamed7950" class="btn btn-primary">Tableau</a>
+            </p>
+        </header>
 
-    <section class="section">
-        <h2>Education</h2>
-        <p><strong>Information Technology Institute (ITI)</strong><br>9-Month Professional Diploma, Data Science Track<br><em>Oct 2022 – Jul 2023 | Giza, Egypt</em></p>
-    </section>
+        <section class="mt-5">
+            <h2 class="section-title">Work Experience</h2>
+            <h3>Signature Technology, Big Data & BI Analyst</h3>
+            <p><strong>Feb 2024 – Present</strong> | Remotely</p>
+            <ul>
+                <li>Utilized MYSQL for data analysis, reducing inventory costs by 15% and increasing customer retention by 10%.</li>
+                <li>Developed Power BI & Tableau E-commerce dashboards.</li>
+                <li>Managed AWS Aurora, enhancing performance by 40% and reducing operational costs by 20%.</li>
+            </ul>
 
-    <section class="section">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Data Analysis, Machine Learning, Deep Learning (Python, R, TensorFlow, PyTorch)</li>
-            <li>Business Statistics, EDA (Excel, SQL)</li>
-            <li>Cloud Platforms (Azure, AWS)</li>
-            <li>Visualization Tools (Tableau, Power BI)</li>
-        </ul>
-    </section>
-    
-    <section class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Amr-mohamed10/Symantic_Search">Semantic Search using BERT for Keyword Extraction</a></li>
-            <li><a href="https://github.com/Amr-mohamed10/Face_Matching">Face Recognition System</a></li>
-            <li><a href="https://github.com/Amr-mohamed10/Price_Prediction">Price Prediction Model</a></li>
-            <li><a href="https://public.tableau.com/views/CovidAfricia2022/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link">Covid-19 Visualization on Tableau</a></li>
-        </ul>
-    </section>
+            <h3>Upwork, Data Science & Machine Learning Engineer</h3>
+            <p><strong>Apr 2021 – Present</strong></p>
+            <ul>
+                <li>Engineered machine learning solutions using Python, R, TensorFlow, and PyTorch, improving predictive accuracy by 40%.</li>
+                <li>Executed advanced statistical analysis and data visualization techniques, contributing to a 35% increase in data-driven decision-making efficiency.</li>
+            </ul>
+        </section>
 
-    <footer>
+        <section class="mt-5">
+            <h2 class="section-title">Education</h2>
+            <p><strong>Information Technology Institute (ITI)</strong><br>9-Month Professional Diploma, Data Science Track<br><em>Oct 2022 – Jul 2023 | Giza, Egypt</em></p>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li>Data Analysis, Machine Learning, Deep Learning (Python, R, TensorFlow, PyTorch)</li>
+                <li>Business Statistics, EDA (Excel, SQL)</li>
+                <li>Cloud Platforms (Azure, AWS)</li>
+                <li>Visualization Tools (Tableau, Power BI)</li>
+            </ul>
+        </section>
+
+        <section class="mt-5">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><a href="https://github.com/Amr-mohamed10/Symantic_Search">Semantic Search using BERT for Keyword Extraction</a></li>
+                <li><a href="https://github.com/Amr-mohamed10/Face_Matching">Face Recognition System</a></li>
+                <li><a href="https://github.com/Amr-mohamed10/Price_Prediction">Price Prediction Model</a></li>
+                <li><a href="https://public.tableau.com/views/CovidAfricia2022/Story1?:language=en-GB&:display_count=n&:origin=viz_share_link">Covid-19 Visualization on Tableau</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
         <p>&copy; 2024 Amr Khairy</p>
     </footer>
+
 </body>
 </html>
